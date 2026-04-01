@@ -1,14 +1,14 @@
 export function add(numbers) {
-  return {};
+  return { result: numbers.reduce((a, b) => a + b, 0) };
 }
 export function subtract(numbers) {
-  return {};
+  return { result: numbers.reduce((a, b) => a - b, 0) };
 }
 
 export function multiply(numbers) {
-  return {};
+  return { result: numbers.reduce((a, b) => a * b, 1) };
 }
 
 export function divide(numbers) {
-  return {};
+  return { result: numbers.reduce((a, b) => a / b, 1) };
 }
