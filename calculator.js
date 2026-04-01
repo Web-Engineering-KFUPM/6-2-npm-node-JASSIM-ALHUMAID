@@ -219,7 +219,7 @@ import _ from 'lodash';
 const operation = process.argv[2];
 const numbers = process.argv.slice(3);
 
-console.log(operation, numbers);
+// console.log(operation, numbers);
 
 if (!isValidOperation(operation)) {
     console.log("Invalid operation. Use: add, subtract, multiply, or divide");

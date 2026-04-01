@@ -1,9 +1,9 @@
 import _ from "lodash";
 
 export function parseNumbers(input) {
-  return _.map(input, (num) => parseFloat(num));
+  return _.compact(_.map(input, (num) => parseFloat(num)));
 }
 
 export function isValidOperation(operation) {
-  return _.includes(['add', 'subtract', 'multiply', 'divide'], operation);
+  return _.includes(["add", "subtract", "multiply", "divide"], operation);
 }
