@@ -221,7 +221,7 @@ const numbers = process.argv.slice(3);
 
 console.log(operation, numbers);
 
-if (isValidOperation(operation)) {
+if (!isValidOperation(operation)) {
     console.log("Invalid operation. Use: add, subtract, multiply, or divide");
     process.exit(1);
 }
@@ -248,5 +248,5 @@ switch (operation) {
         process.exit(1);
 }
 
-console.log(`Result: ${result}`);
+console.log(`Result: ${result.result}`);
 
